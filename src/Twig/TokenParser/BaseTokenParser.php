@@ -108,7 +108,7 @@ abstract class BaseTokenParser extends AbstractTokenParser
         // parse expressions
         $expressions = [];
         while (!$this->parser->getStream()->test(Token::BLOCK_END_TYPE)) {
-            $expressions[] = $this->parser->getExpressionParser()->parseExpression();
+            $expressions[] = $this->parser->parseExpression();
         }
 
         // end of expressions

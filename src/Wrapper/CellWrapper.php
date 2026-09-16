@@ -57,9 +57,10 @@ class CellWrapper extends BaseWrapper
             $this->sheetWrapper->setColumn($index);
         }
 
-        $this->object = $this->sheetWrapper->getObject()->getCellByColumnAndRow(
+        $this->object = $this->sheetWrapper->getObject()->getCell([
             $this->sheetWrapper->getColumn(),
-            $this->sheetWrapper->getRow());
+            $this->sheetWrapper->getRow(),
+        ]);
 
         $this->parameters['value'] = null;
         $this->parameters['properties'] = $properties;
