@@ -6,6 +6,7 @@ use PhpOffice\PhpSpreadsheet\Exception;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 use PhpOffice\PhpSpreadsheet\Worksheet\ColumnDimension;
 use PhpOffice\PhpSpreadsheet\Worksheet\RowDimension;
+use Twig\Environment;
 
 /**
  * Class SheetWrapper.
@@ -42,11 +43,11 @@ class SheetWrapper extends BaseWrapper
     /**
      * SheetWrapper constructor.
      *
-     * @param array             $context
-     * @param \Twig_Environment $environment
-     * @param DocumentWrapper   $documentWrapper
+     * @param array           $context
+     * @param Environment     $environment
+     * @param DocumentWrapper $documentWrapper
      */
-    public function __construct(array $context, \Twig_Environment $environment, DocumentWrapper $documentWrapper)
+    public function __construct(array $context, Environment $environment, DocumentWrapper $documentWrapper)
     {
         parent::__construct($context, $environment);
 

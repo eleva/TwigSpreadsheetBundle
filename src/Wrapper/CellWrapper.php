@@ -4,6 +4,7 @@ namespace MewesK\TwigSpreadsheetBundle\Wrapper;
 
 use PhpOffice\PhpSpreadsheet\Cell\Cell;
 use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
+use Twig\Environment;
 
 /**
  * Class CellWrapper.
@@ -23,11 +24,11 @@ class CellWrapper extends BaseWrapper
     /**
      * CellWrapper constructor.
      *
-     * @param array             $context
-     * @param \Twig_Environment $environment
-     * @param SheetWrapper      $sheetWrapper
+     * @param array        $context
+     * @param Environment  $environment
+     * @param SheetWrapper $sheetWrapper
      */
-    public function __construct(array $context, \Twig_Environment $environment, SheetWrapper $sheetWrapper)
+    public function __construct(array $context, Environment $environment, SheetWrapper $sheetWrapper)
     {
         parent::__construct($context, $environment);
 
