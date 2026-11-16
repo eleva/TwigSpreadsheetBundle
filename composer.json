@@ -19,7 +19,7 @@
         "php": ">=8.5",
         "symfony/framework-bundle": "6.*",
         "twig/twig": "^2.0|^3.0",
-        "phpoffice/phpspreadsheet": "5.9.0"
+        "phpoffice/phpspreadsheet": "5.11.0"
     },
     "require-dev": {
         "symfony/symfony": "6.*",
